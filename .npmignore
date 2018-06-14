@@ -1,3 +1,6 @@
+*.lock
+coverage
+
 # Created by .ignore support plugin (hsz.mobi)
 
 # IntelliJ project files
@@ -5,5 +8,3 @@
 *.iml
 out
 gen
-
-*.lock

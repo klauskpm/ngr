@@ -4,7 +4,7 @@
   "description": "A CLI to help build monorepos with Angular",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --config jest.config.json --coverage",
     "semantic-release": "semantic-release",
     "commit": "git-cz",
     "commit-all": "git add --all && npm run commit",
@@ -27,6 +27,7 @@
     "commander": "^2.15.1",
     "commitizen": "^2.10.1",
     "cz-conventional-changelog": "^2.1.0",
+    "jest": "^23.1.0",
     "node-emoji": "^1.8.1",
     "semantic-release": "^15.5.2",
     "travis-deploy-once": "^5.0.0"
