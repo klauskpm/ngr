@@ -1,0 +1,26 @@
+{
+  "name": "ngr",
+  "version": "0.0.0",
+  "description": "A CLI to help build monorepos with Angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "angular",
+    "monorepo",
+    "ng"
+  ],
+  "preferGlobal": true,
+  "bin": {
+    "ngr": "./bin/index.min.js"
+  },
+  "author": "Klaus Kazlauskas <klausmachado@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.15.1",
+    "node-emoji": "^1.8.1"
+  }
+}
