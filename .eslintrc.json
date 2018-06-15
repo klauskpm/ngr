@@ -1,0 +1,15 @@
+{
+  "extends": ["eslint:recommended", "google"],
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true
+  },
+  "globals": {
+    "describe": true,
+    "test": true,
+    "expect": true
+  }
+}

@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 const program = require('commander');
-const chalk = require('chalk');
-const emoji = require('node-emoji');
+// const chalk = require('chalk');
+// const emoji = require('node-emoji');
 
 const pkg = require('../package');
-const [,, args] = process.argv;
+// const [,, args] = process.argv;
 
 program
   .version(pkg.version, '-v, --version');

@@ -1,4 +1,4 @@
-const { exec } = require('child_process');
+const {exec} = require('child_process');
 
 const pkg = require('../package');
 const ngr = './src/index.js';
