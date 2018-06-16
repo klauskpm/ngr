@@ -1,6 +1,6 @@
 {
   "name": "ngr",
-  "version": "0.0.0-development",
+  "version": "0.1.0",
   "description": "A CLI to help build monorepos with Angular",
   "main": "src/index.js",
   "scripts": {
