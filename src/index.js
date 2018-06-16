@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 
-const {help} = require('./scripts');
+const program = require('./program');
+const ngr = require('./ngr')(program);
 
 const [,, ...args] = process.argv;
 
 if (!args.length) {
-  help();
+  ngr.help();
 }
+
+program.parse(process.argv);

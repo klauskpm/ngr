@@ -4,7 +4,8 @@
   "description": "A CLI to help build monorepos with Angular",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest --config jest.config.json --coverage",
+    "test": "jest --config jest.config.json --coverage --verbose",
+    "test:watch": "npm run test",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
     "semantic-release": "semantic-release",
