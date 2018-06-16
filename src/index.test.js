@@ -11,5 +11,13 @@ describe('ngr', () => {
       done();
     });
   });
+
+  test('returns --help when no option is passed', (done) => {
+    exec(`${ngr}`, (err, stdout, stderr) => {
+      if (err) throw stderr;
+      expect(stdout.replace(`\n`, '')).not.toBe('');
+      done();
+    });
+  });
 });
 

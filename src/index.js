@@ -6,9 +6,12 @@ const program = require('commander');
 // const emoji = require('node-emoji');
 
 const pkg = require('../package');
-// const [,, args] = process.argv;
+const [,, ...args] = process.argv;
 
 program
-  .version(pkg.version, '--version');
+  .version(pkg.version, '--version')
+  .parse(process.argv);
 
-program.parse(process.argv);
+if (!args.length) {
+  program.outputHelp();
+}
