@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const program = require('commander');
+// const ora = require('ora');
 // const chalk = require('chalk');
 // const emoji = require('node-emoji');
 
