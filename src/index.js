@@ -9,6 +9,6 @@ const pkg = require('../package');
 // const [,, args] = process.argv;
 
 program
-  .version(pkg.version, '-v, --version');
+  .version(pkg.version, '--version');
 
 program.parse(process.argv);
