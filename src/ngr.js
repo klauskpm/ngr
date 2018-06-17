@@ -1,7 +1,13 @@
-module.exports = (program) => {
+module.exports = (fs) => {
   return {
-    help: () => {
-      return program.outputHelp();
+    setup: () => {
+      fs.writeFile('ngr.json', 'conteudo', function(err) {
+        if (err) {
+          return console.log(err);
+        }
+
+        console.log('The file was saved!');
+      });
     },
   };
 };

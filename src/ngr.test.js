@@ -1,16 +1,19 @@
-const program = jest.genMockFromModule('./program');
+const fs = jest.genMockFromModule('fs');
 
-program.outputHelp = () => {
-  return 'help';
-};
+fs.writeFile = jest.fn();
 
-const ngr = require('./ngr')(program);
+const ngr = require('./ngr')(fs);
 
 describe('ngr', () => {
-  describe('help', () => {
-    test('return the help message', () => {
-      const text = ngr.help();
-      expect(text).toBe('help');
+  describe('#setup', () => {
+    test('call fs#writeFile', () => {
+      ngr.setup();
+      expect(fs.writeFile)
+        .toHaveBeenCalledWith(
+          'ngr.json',
+          expect.any(String),
+          expect.any(Function)
+        );
     });
   });
 });
