@@ -1,18 +1,18 @@
 const fs = jest.genMockFromModule('fs');
 
-fs.writeFile = jest.fn();
-
 const ngr = require('./ngr')(fs);
 
 describe('ngr', () => {
   describe('#setup', () => {
     test('call fs#writeFile', () => {
-      ngr.setup();
+      const callback = jest.fn();
+
+      ngr.setup(callback);
       expect(fs.writeFile)
         .toHaveBeenCalledWith(
           'ngr.json',
           expect.any(String),
-          expect.any(Function)
+          callback
         );
     });
   });
