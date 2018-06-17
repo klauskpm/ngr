@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 
-const program = require('./program');
+const fs = require('fs');
+const commander = require('commander');
+const ngr = require('./ngr')(fs);
+const program = require('./program')(ngr, commander).init();
 
 const [,, ...args] = process.argv;
 

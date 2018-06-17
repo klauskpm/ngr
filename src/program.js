@@ -1,13 +1,15 @@
-const fs = require('fs');
-const program = require('commander');
-
 const pkg = require('../package');
-const ngr = require('./ngr')(fs);
 
-program.version(pkg.version, '--version');
+module.exports = (ngr, commander) => {
+  return {
+    init: () => {
+      commander.version(pkg.version, '--version');
 
-program
-  .command('setup')
-  .action(ngr.setup);
+      commander
+        .command('setup')
+        .action(ngr.setup);
 
-module.exports = program;
+      return commander;
+    },
+  };
+};
