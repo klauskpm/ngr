@@ -33,6 +33,8 @@
     "eslint": "^4.19.1",
     "eslint-config-google": "^0.9.1",
     "jest": "^23.1.0",
+    "jest-chain": "^1.0.3",
+    "jest-extended": "^0.7.2",
     "node-emoji": "^1.8.1",
     "ora": "^2.1.0",
     "semantic-release": "^15.5.2",
