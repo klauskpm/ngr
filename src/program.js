@@ -7,7 +7,11 @@ module.exports = (ngr, commander) => {
 
       commander
         .command('setup')
-        .action(ngr.setup);
+        .action(() => {
+          ngr.setup((err) => {
+            if (err) throw err;
+          });
+        });
 
       return commander;
     },
