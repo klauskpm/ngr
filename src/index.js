@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable node/shebang */
 
 const fs = require('fs');
 const commander = require('commander');

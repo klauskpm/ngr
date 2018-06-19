@@ -1,6 +1,6 @@
 {
   "name": "ngr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A CLI to help build monorepos with Angular",
   "main": "src/index.js",
   "scripts": {
@@ -28,9 +28,13 @@
   },
   "author": "Klaus Kazlauskas <klausmachado@gmail.com>",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.15.1",
+    "node-emoji": "^1.8.1",
+    "ora": "^2.1.0"
+  },
+  "devDependencies": {
     "commitizen": "^2.10.1",
     "cz-conventional-changelog": "^2.1.0",
     "eslint": "^4.19.1",
@@ -39,8 +43,6 @@
     "jest": "^23.1.0",
     "jest-chain": "^1.0.3",
     "jest-extended": "^0.7.2",
-    "node-emoji": "^1.8.1",
-    "ora": "^2.1.0",
     "semantic-release": "^15.5.2",
     "travis-deploy-once": "^5.0.0"
   },
