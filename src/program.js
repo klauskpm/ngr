@@ -6,12 +6,8 @@ module.exports = (ngr, commander) => {
       commander.version(pkg.version, '--version');
 
       commander
-        .command('setup')
-        .action(() => {
-          ngr.setup((err) => {
-            if (err) throw err;
-          });
-        });
+        .command('init')
+        .action(ngr.init);
 
       return commander;
     },
